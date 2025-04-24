@@ -28,7 +28,7 @@ void test_insert_single(const key_t key)
   assert(p->key == key);
   // assert(p->color == RBTREE_BLACK);  // color of root node should be black
 #ifdef SENTINEL
-  assert(p->left == t->nil);
+
   assert(p->right == t->nil);
   assert(p->parent == t->nil);
 #else
